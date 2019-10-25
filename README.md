@@ -99,8 +99,8 @@ find errors, and interpreter. For example:
 
 Continue
 
-1 and true;-- -    out: no error
-1 and false;-- -   out: Invalid Input parameter
+1 and true;-- -    out: no error [Normal page]
+1 and false;-- -   out: Invalid Input parameter [Error page]
 
 1 order by 7-- -   out: error (Unknown column '7' in 'order clause')
 1 order by 5-- -   out: no error  (us have 5 columns)
