@@ -3,7 +3,7 @@ Hello my friends, this is my repo about sql injections.
 
 References:
 
- https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md#mysql-union-based
+ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
  
  http://www.securityidiots.com/Web-Pentest/SQL-Injection
  
