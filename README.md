@@ -1,4 +1,8 @@
-# blackhat_sql_injections
+# SQL Injections for Pentesters
+
+by: @Anake    (Anakein)
+email: anakein [@] protonmail [dot] ch
+
 Hello my friends, this is my repo about sql injections. 
 
 References:
