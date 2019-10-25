@@ -1,5 +1,14 @@
 # blackhat_sql_injections
-Hello my frinds, it is my repo about sql injections. 
+Hello my friends, this is my repo about sql injections. 
+
+References:
+
+ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md#mysql-union-based
+ 
+ http://www.securityidiots.com/Web-Pentest/SQL-Injection
+ 
+ 
+LAB: http://leettime.net/sqlninja.com/index.php
 
 
 ## MYSQL Union Based
@@ -87,11 +96,4 @@ OUTPUT: Error While Selection process : XPATH syntax error: '~5.6.44-cll-lve~'
 
 
 
-References:
 
- https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md#mysql-union-based
- 
- http://www.securityidiots.com/Web-Pentest/SQL-Injection
- 
- 
-LAB: http://leettime.net/sqlninja.com/index.php
