@@ -42,6 +42,19 @@ select * from table_name where id=("23")
 
 ```
 
+##### Information IMPORTANT
+Remember whenever the input is enclosed with single quotes only single quote with input will create error.
+When input is enlcosed by double quotes a double qoute with input will give error.
+When Input is not enlcosed with anything single quote and double quote both will give error.
+
+First of all we can try our input with some injections to see if we get any error. Error may always not be real SQL error it may be some times generic error or change in output of the application. All you have to do it recognise it. 
+
+###### MySQL Error Style:
+
+
+
+
+
 ## MYSQL Union Based
 
 ### Extract database with information_schema
