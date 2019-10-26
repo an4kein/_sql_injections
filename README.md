@@ -28,6 +28,7 @@ select * from table_name where id=('23')
 
 select * from table_name where id=("23")
 
+```
 
 +--------+------------------------------+
 |Comment	|	      Name                   | 
@@ -40,7 +41,7 @@ select * from table_name where id=("23")
 |`	      :	Backtick                     |
 +--------+------------------------------+
 
-```
+
 
 ## MYSQL Union Based
 
