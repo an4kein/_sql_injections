@@ -49,31 +49,31 @@ When Input is not enlcosed with anything single quote and double quote both will
 
 First of all we can try our input with some injections to see if we get any error. Error may always not be real SQL error it may be some times generic error or change in output of the application. All you have to do it recognise it. 
 
-##### MySQL Error Style:
+![MySQL](https://img.shields.io/badge/1-MySQL%20Error%20Style-critical)
 
 `You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'' at line 1`
 
-##### MSSQL ASPX Error:
+![mssql](https://img.shields.io/badge/2-MSSQL%20ASPX%20Error-critical)
 
 `Server Error in '/' Application`
 
-##### MSAccess (Apache PHP):
+![MSAcess](https://img.shields.io/badge/3-MSAccess%20(Apache%20PHP)-critical)
 
 `Fatal error: Uncaught exception 'com_exception' with message Source: Microsoft JET Database Engine`
 
-##### MSAccesss (IIS ASP):
+![MSAccessIISaSp](https://img.shields.io/badge/4-MSAccesss%20(IIS%20ASP)-critical)
 
 `Microsoft JET Database Engine error '80040e14'`
 
-##### Oracle Error:
+![oracle](https://img.shields.io/badge/5-Oracle%20Error-critical)
 
 `ORA-00933: SQL command not properly ended`
 
-##### ODBC Error:
+![ORA](https://img.shields.io/badge/6-ODBC%20Error-critical)
 
 `Microsoft OLE DB Provider for ODBC Drivers (0x80040E14)`
 
-##### PostgreSQL Error:
+![postgree](https://img.shields.io/badge/7-PostgreSQL%20Error-critical)
 
 `PSQLException: ERROR: unterminated quoted string at or near "'" Position: 1
 or
@@ -81,6 +81,7 @@ Query failed: ERROR: syntax error at or near
 "'" at character 56 in /www/site/test.php on line 121.`
 
 ##### MS SQL Server: Error:
+![mssqlserver](https://img.shields.io/badge/8-MS%20SQL%20Server-critical)
 
 `Microsoft SQL Native Client error %u201880040e14%u2019
 Unclosed quotation mark after the character string`
