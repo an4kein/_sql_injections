@@ -32,8 +32,8 @@ select * from table_name where id=("23")
 +--------+------------------------------+
 |Comment	|	      Name                   | 
 +--------+------------------------------+
-|--	     :	MySQL Linux Style            |
-|--+  :	MySQL Windows Style          |
+|--	  :	MySQL Linux Style            |
+|--+    :	MySQL Windows Style          |
 |#	 :	Hash (URL encode while use)  |
 |--+-	 :	SQL Comment                  |
 |;%00	 :	Null Byte                    |
