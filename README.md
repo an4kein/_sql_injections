@@ -42,17 +42,65 @@ select * from table_name where id=("23")
 
 ```
 
-##### Information IMPORTANT
+#### Information IMPORTANT
 Remember whenever the input is enclosed with single quotes only single quote with input will create error.
 When input is enlcosed by double quotes a double qoute with input will give error.
 When Input is not enlcosed with anything single quote and double quote both will give error.
 
 First of all we can try our input with some injections to see if we get any error. Error may always not be real SQL error it may be some times generic error or change in output of the application. All you have to do it recognise it. 
 
-###### MySQL Error Style:
+##### MySQL Error Style:
 
+`You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'' at line 1`
 
+##### MSSQL ASPX Error:
 
+`Server Error in '/' Application`
+
+##### MSAccess (Apache PHP):
+
+`Fatal error: Uncaught exception 'com_exception' with message Source: Microsoft JET Database Engine`
+
+##### MSAccesss (IIS ASP):
+
+`Microsoft JET Database Engine error '80040e14'`
+
+##### Oracle Error:
+
+`ORA-00933: SQL command not properly ended`
+
+##### ODBC Error:
+
+`Microsoft OLE DB Provider for ODBC Drivers (0x80040E14)`
+
+##### PostgreSQL Error:
+
+`PSQLException: ERROR: unterminated quoted string at or near "'" Position: 1
+or
+Query failed: ERROR: syntax error at or near
+"'" at character 56 in /www/site/test.php on line 121.`
+
+##### MS SQL Server: Error:
+
+`Microsoft SQL Native Client error %u201880040e14%u2019
+Unclosed quotation mark after the character string`
+
+Now i will show you different tests to create errors and confirm which query is working inside the Application while using the same example "http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1" url, You can perform these tests and check the reactions of the application:
+
+```
++---------------------------+-------------------------------------------------------------------------------------+
+|Input	                    | 	Reaction if its Intiger Based Injection                                           |
++---------------------------+-------------------------------------------------------------------------------------+
+|23'                        :   It should cause error or no output                                                |
+|"	                    :	Should cause error or no output                                                   |
+|23 or 1=1	            :	Any Output should come but may be different output                                |
+|23 and 1=1	            :	Same output should come                                                           |
+|23 and false	            :	No output                                                                         |
+|23 and true	            :	Same Output                                                                       |
+|23--+	                    :	Same output. I used --+ to comment, later i ll show how to know which one to use  |
+|23 and true--+	            :	Same output                                                                       |
++-----------------------------------------------------------------------------------------------------------------+
+```
 
 
 ## MYSQL Union Based
