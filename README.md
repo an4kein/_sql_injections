@@ -80,7 +80,6 @@ or
 Query failed: ERROR: syntax error at or near
 "'" at character 56 in /www/site/test.php on line 121.`
 
-##### MS SQL Server: Error:
 ![mssqlserver](https://img.shields.io/badge/8-MS%20SQL%20Server-critical)
 
 `Microsoft SQL Native Client error %u201880040e14%u2019
