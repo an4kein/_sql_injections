@@ -74,6 +74,8 @@ so as i showed above test for '--' type comment in the same manner you can check
 [3]. Commenting 💬
 
 
+   | http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' order by 1337 --+ |
+   ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 #### Information IMPORTANT
 Remember whenever the input is enclosed with single quotes only single quote with input will create error.
 When input is enlcosed by double quotes a double qoute with input will give error.
