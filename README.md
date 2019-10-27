@@ -18,17 +18,17 @@ LAB: http://leettime.net/sqlninja.com/index.php
 
 
 ```
-select * from table_name where id=23
+select * from table_name where id=1337
 
-select * from table_name where id='23'
+select * from table_name where id='1337'
 
-select * from table_name where id="23"
+select * from table_name where id="1337"
 
-select * from table_name where id=(23)
+select * from table_name where id=(1337)
 
-select * from table_name where id=('23')
+select * from table_name where id=('1337')
 
-select * from table_name where id=("23")
+select * from table_name where id=("1337")
 
 
 +--------+-----------------------------------+
