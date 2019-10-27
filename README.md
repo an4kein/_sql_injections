@@ -5,7 +5,7 @@ email: anakein [@] protonmail [dot] ch
 
 Hello my friends, this is my repo about sql injections. 
 
-Thanks for all: "Zenodermus Javanicus", "@zc00l", "@LowFuel" 
+Thanks for all: Zenodermus Javanicus, @zc00l, @LowFuel 
 
 References:
 
