@@ -63,7 +63,15 @@ You need realize several tests, really this is tense but is necessary
 
 so as i showed above test for '--' type comment in the same manner you can check for all commenting types and the one which gives same output as giving with "http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1" then that can help you understand the type of internal query alongwith the comment that you can use.
 
+#### Rules
 
+ Any time anywhere or any application where ever and whenever you are injecting there are following three basic rules of injecting!
+ 
+[1]. Balance ⚖️
+
+[2]. Inject :syringe:
+
+[3]. Commenting 💬
 
 
 #### Information IMPORTANT
