@@ -63,7 +63,7 @@ You need realize several tests, really this is tense but is necessary
 
 so as i showed above test for '--' type comment in the same manner you can check for all commenting types and the one which gives same output as giving with "http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1" then that can help you understand the type of internal query alongwith the comment that you can use.
 
-#### Rules
+#### :heavy_exclamation_mark: Rules :heavy_exclamation_mark:
 
  Any time anywhere or any application where ever and whenever you are injecting there are following three basic rules of injecting!
  
@@ -75,7 +75,7 @@ so as i showed above test for '--' type comment in the same manner you can check
 
 ![rules_for_injection](https://raw.githubusercontent.com/0xC2-0xC2/blackhat_sql_injections/master/injection_.jpg)
 
-#### Information IMPORTANT
+#### :heavy_exclamation_mark: Information IMPORTANT :heavy_exclamation_mark:
 Remember whenever the input is enclosed with single quotes only single quote with input will create error.
 When input is enlcosed by double quotes a double qoute with input will give error.
 When Input is not enlcosed with anything single quote and double quote both will give error.
@@ -158,7 +158,7 @@ OR
 
 Then the following codes will extract the databases'name, tables'name, columns'name.
 
-#### Various methods to make a QUERY INVALID  - Remember to use URL Encoded.
+#### :heavy_exclamation_mark: Various methods to make a QUERY INVALID  - Remember to use URL Encoded. :heavy_exclamation_mark:
 
 ```
 
