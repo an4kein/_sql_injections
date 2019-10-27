@@ -1,6 +1,6 @@
 # SQL Injections for Pentesters :syringe:
 
-by: @Anake  :alien::smiling_imp::boom:
+by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom: 
 
 email: anakein [@] protonmail [dot] ch
 
