@@ -1,4 +1,4 @@
-# SQL Injections for Pentesters
+# SQL Injections for Pentesters :syringe:
 
 by: @Anake  :alien::smiling_imp::boom:
 
