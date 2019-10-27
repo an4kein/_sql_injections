@@ -73,7 +73,7 @@ so as i showed above test for '--' type comment in the same manner you can check
 
 [3]. Commenting 💬
 
-![rules_for_injection](https://raw.githubusercontent.com/0xC2-0xC2/blackhat_sql_injections/master/injection2.jpg)
+![rules_for_injection](https://raw.githubusercontent.com/0xC2-0xC2/blackhat_sql_injections/master/injection_.jpg)
 
 #### Information IMPORTANT
 Remember whenever the input is enclosed with single quotes only single quote with input will create error.
