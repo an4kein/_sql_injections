@@ -5,6 +5,8 @@ email: anakein [@] protonmail [dot] ch
 
 Hello my friends, this is my repo about sql injections. 
 
+Thanks for all: "Zenodermus Javanicus", "@zc00l", "@LowFuel" 
+
 References:
 
  https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
@@ -247,10 +249,3 @@ OUTPUT: Username is : leettime_761wHole
 `AND updatexml(rand(),concat(CHAR(126),version(),CHAR(126)),null)--`
 
 OUTPUT: Error While Selection process : XPATH syntax error: '~5.6.44-cll-lve~'
-
-
-
-
-
-
-Credits: @zc00l
