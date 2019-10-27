@@ -1,6 +1,7 @@
 # SQL Injections for Pentesters
 
-by: @Anake    (Anakein)
+by: @Anake  :alien::smiling_imp::boom:
+
 email: anakein [@] protonmail [dot] ch
 
 Hello my friends, this is my repo about sql injections. 
