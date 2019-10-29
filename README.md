@@ -8,6 +8,8 @@ Hello my friends, this is my repo about sql injections.
 
 Thanks for all: Zenodermus Javanicus, @zc00l, @LowFuel 
 
+:point_right: [SQL-Injection-Cheat-Sheet-MySQL](https://github.com/0xC2-0xC2/blackhat_sql_injections/blob/master/SQL_Injection_Cheat_Sheet_MySQL.md)
+
 References:
 
  https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
