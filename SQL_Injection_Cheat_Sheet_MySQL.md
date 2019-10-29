@@ -4,6 +4,9 @@ Inspired by
 [SQL-Injection-Cheat-Sheet-MySQL](https://blog.safebuff.com/2016/04/11/SQL-Injection-Cheat-Sheet-MySQL/) and 
 [SecurityIdiots](http://www.securityidiots.com/Web-Pentest/SQL-Injection/)
 
+
+[Advanced](https://github.com/w4fz5uck5/Pentest-notes/blob/master/SQL_injection.txt)
+
 by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom: 
 
 
