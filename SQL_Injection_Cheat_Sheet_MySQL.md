@@ -16,6 +16,13 @@ Inspired by
     - [Columns Names](#Columns-Names)
     - [Bitwise AND](#Bitwise-AND)
     - [No Quotes](#No-Quotes)
+    - [String Concatenation](#String-Concatenation)
+    - [If Statement](#If-Statement)
+    - [Avoiding Quotes](#Avoiding-Quotes)
+    - [Case Statement](#Case-Statement)
+    - [Conditionals](#Conditionals)
+    - [Time-delay](#Time-delay)
+    
     
     
     
@@ -112,3 +119,41 @@ SELECT 6 & 1; # returns 0
 ```
 CONCAT(CHAR(97), CHAR(98), CHAR(99))
 ```
+
+### String Concatenation
+
+```
+CONCAT(foo, bar)
+```
+
+### If Statement
+
+```
+SELECT if(1=1,'foo','bar'); -- returns 'foo'
+```
+
+### Avoiding Quotes
+
+```
+SELECT 0×414243; # returns ABC
+```
+### Case Statement
+
+```
+SELECT CASE WHEN (1=1) THEN 'A' ELSE 'B' END; # returns A
+```
+
+### Conditionals
+
+```
+SELECT IF(1=1,'true','false');
+```
+
+### Time-delay
+
+```
+SELECT BENCHMARK(1000000,MD5(‘A’));
+SELECT SLEEP(5); # >= 5.0.12
+```
+
+
