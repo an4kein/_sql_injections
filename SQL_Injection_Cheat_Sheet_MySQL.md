@@ -5,7 +5,7 @@ Inspired by
 [SecurityIdiots](http://www.securityidiots.com/Web-Pentest/SQL-Injection/)
 
 
-[Advanced](https://github.com/w4fz5uck5/Pentest-notes/blob/master/SQL_injection.txt)
+[Advanced](https://github.com/0xC2-0xC2/Pentest-notes-1/blob/master/SQL_injection.txt)
 
 by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom: 
 
