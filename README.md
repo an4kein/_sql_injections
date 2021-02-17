@@ -2,7 +2,7 @@
 
 by: Eduardo Barbosa (@anakein)  :alien::smiling_imp::boom: 
 
-email: anakein [at] protonmail [dot] ch
+email: anakein[at]protonmail[dot]ch
 
 Hello my friends, this is my repo about sql injections. 
 
